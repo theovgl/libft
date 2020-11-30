@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 14:50:05 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/30 12:05:46 by tvogel           ###   ########.fr       */
+/*   Updated: 2020/11/30 12:33:12 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ int			len(unsigned int n)
 	return (i + 1);
 }
 
-char				*ft_itoa(int n)
+char		*ft_itoa(int n)
 {
 	char			*dest;
 	unsigned int	length;
