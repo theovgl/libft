@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 16:22:46 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/26 14:10:12 by tvogel           ###   ########.fr       */
+/*   Updated: 2020/11/30 13:37:42 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,7 +50,7 @@ int		count_char(char *s, char c, int position)
 
 char	**free_error(char **dest, int position)
 {
-	while (position > 0)
+	while (position >= 0)
 	{
 		free(dest[position]);
 		position--;
