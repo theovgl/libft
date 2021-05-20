@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 13:24:01 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/26 11:39:51 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 10:58:46 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	len = ft_strlen(s1);
 	while (len && ft_strchr(set, s1[len]))
 		len--;
-	str = ft_substr((char*)s1, 0, len + 1);
+	str = ft_substr((char *)s1, 0, len + 1);
 	return (str);
 }

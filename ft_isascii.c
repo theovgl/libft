@@ -6,13 +6,13 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 17:38:23 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/16 17:48:06 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:33:53 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	if ((c >= 0 && c <= 127))
 	{

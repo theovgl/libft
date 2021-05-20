@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/14 15:11:30 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/18 18:23:21 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 11:04:43 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_strdup(const char *src)
 
 	i = 0;
 	s = (char *)src;
-	if (!(str = malloc(sizeof(char) * ft_strlen(s) + 1)))
+	str = malloc(sizeof(char) * ft_strlen(s) + 1);
+	if (!str)
 		return (NULL);
 	while (src[i])
 	{

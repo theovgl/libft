@@ -6,13 +6,13 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 17:12:32 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/17 17:53:43 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:33:19 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 	{

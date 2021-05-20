@@ -6,15 +6,15 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 15:37:13 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/18 14:11:15 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:40:39 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_tolower(int c)
+int	ft_tolower(int c)
 {
-	int lower;
+	int	lower;
 
 	if (c >= 'A' && c <= 'Z')
 	{

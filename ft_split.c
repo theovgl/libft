@@ -6,17 +6,17 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 16:22:46 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/30 13:37:42 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 11:54:34 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		count_words(char *str, char c)
+int	count_words(char *str, char c)
 {
-	int i;
-	int n;
-	int word;
+	int	i;
+	int	n;
+	int	word;
 
 	word = 0;
 	i = 0;
@@ -35,9 +35,9 @@ int		count_words(char *str, char c)
 	return (word);
 }
 
-int		count_char(char *s, char c, int position)
+int	count_char(char *s, char c, int position)
 {
-	int word_lenght;
+	int	word_lenght;
 
 	word_lenght = 0;
 	while (s[position] != '\0' && s[position] != c)
@@ -61,9 +61,9 @@ char	**free_error(char **dest, int position)
 
 char	**cpy_word(char *str, char c, char **dest, int length)
 {
-	int i;
-	int x;
-	int n;
+	int	i;
+	int	x;
+	int	n;
 
 	i = 0;
 	x = 0;
@@ -72,7 +72,8 @@ char	**cpy_word(char *str, char c, char **dest, int length)
 		n = 0;
 		while (str[i] == c)
 			i++;
-		if (!(dest[x] = malloc(sizeof(char) * count_char(str, c, i) + 1)))
+		dest[x] = malloc(sizeof(char) * count_char(str, c, i) + 1);
+		if (!dest[x])
 			return (free_error(dest, x));
 		while (str[i] != c && str[i])
 		{
@@ -97,7 +98,8 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	str = (char *)s;
 	nb_words = count_words(str, c);
-	if (!(dest = malloc(sizeof(char *) * (nb_words + 1))))
+	dest = malloc(sizeof(char *) * (nb_words + 1));
+	if (!dest)
 		return (NULL);
 	dest = cpy_word(str, c, dest, nb_words);
 	return (dest);

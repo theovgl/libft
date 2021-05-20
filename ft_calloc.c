@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/17 10:28:39 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/17 13:15:11 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:32:56 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ void	*ft_calloc(size_t nmemb, size_t size)
 
 	i = 0;
 	count = nmemb * size;
-	if (!(ptr = malloc(count)))
+	ptr = malloc(count);
+	if (!ptr)
 		return (0);
 	while (count > 0)
 	{

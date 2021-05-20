@@ -6,17 +6,17 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 13:56:58 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/19 11:32:41 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:41:35 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlcat(char *dst, const char *src, size_t size)
+size_t	ft_strlcat(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t a;
-	size_t j;
+	size_t	i;
+	size_t	a;
+	size_t	j;
 
 	i = 0;
 	if (size != 0)

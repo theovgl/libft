@@ -6,13 +6,13 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 16:46:15 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/16 17:08:39 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:33:50 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isalpha(int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'A' && c <= 'Z') || (c >= 'a' && c <= 'z'))
 	{

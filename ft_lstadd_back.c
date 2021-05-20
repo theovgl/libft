@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/26 19:19:02 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/26 20:36:14 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:35:13 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstadd_back(t_list **alst, t_list *new)
 {
-	t_list *temp;
+	t_list	*temp;
 
 	if (alst == NULL || new == NULL)
 		return ;

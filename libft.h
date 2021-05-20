@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/03 14:23:08 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/30 16:09:09 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 10:59:21 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -63,7 +63,7 @@ char			*ft_itoa(int n);
 /*
 ** BONUS
 */
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;

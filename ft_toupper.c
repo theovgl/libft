@@ -6,15 +6,15 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 15:37:13 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/16 17:45:48 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:40:45 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
-	int upper;
+	int	upper;
 
 	if (c >= 'a' && c <= 'z')
 	{

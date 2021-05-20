@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/20 14:08:38 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/26 14:36:29 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 11:04:01 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	dest = (char *)s;
 	if (!s || len <= 0 || start >= ft_strlen(s))
 		return (ft_strdup(""));
-	if (!(dest = malloc(sizeof(char) * (len + 1))))
+	dest = malloc(sizeof(char) * (len + 1));
+	if (!dest)
 		return (NULL);
 	while (s[start] && j < len)
 	{

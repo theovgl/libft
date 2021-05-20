@@ -6,23 +6,23 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/07/07 15:34:05 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/19 10:51:10 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:31:53 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_atoi(const char *nptr)
+int	ft_atoi(const char *nptr)
 {
-	int i;
-	int calc;
-	int result;
+	int	i;
+	int	calc;
+	int	result;
 
 	i = 0;
 	result = 0;
 	calc = 1;
-	while (nptr[i] == '\t' || nptr[i] == '\n' || nptr[i] == '\v' ||
-		nptr[i] == '\f' || nptr[i] == '\r' || nptr[i] == ' ')
+	while (nptr[i] == '\t' || nptr[i] == '\n' || nptr[i] == '\v'
+		|| nptr[i] == '\f' || nptr[i] == '\r' || nptr[i] == ' ')
 		i++;
 	while (nptr[i] == 43 || nptr[i] == 45)
 	{

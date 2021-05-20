@@ -6,15 +6,15 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 17:55:21 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/19 11:19:15 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:41:22 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t		ft_strlen(const char *src)
+size_t	ft_strlen(const char *src)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (src[i])

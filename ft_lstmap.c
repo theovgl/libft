@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/30 15:20:16 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/30 16:09:30 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 12:06:11 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void*), void (*del)(void*))
 	new_lst = NULL;
 	while (lst)
 	{
-		if (!(new_elem = ft_lstnew(f(lst->content))))
+		new_elem = ft_lstnew(f(lst->content));
+		if (!new_elem)
 		{
 			ft_lstclear(&new_lst, del);
 			return (NULL);

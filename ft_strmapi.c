@@ -6,7 +6,7 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/19 14:58:55 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/26 14:50:55 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/20 11:02:49 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	if (!s || !f)
 		return (NULL);
 	size = ft_strlen(s);
-	if (!(str = malloc(sizeof(char) * (size + 1))))
+	str = (malloc(sizeof(char) * (size + 1)));
+	if (!str)
 		return (NULL);
 	while (i < size)
 	{

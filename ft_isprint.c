@@ -6,13 +6,13 @@
 /*   By: tvogel <tvogel@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/16 17:42:11 by tvogel            #+#    #+#             */
-/*   Updated: 2020/11/18 14:05:37 by tvogel           ###   ########.fr       */
+/*   Updated: 2021/05/19 17:34:02 by tvogel           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isprint(int c)
+int	ft_isprint(int c)
 {
 	if ((c >= 32 && c < 127))
 	{
